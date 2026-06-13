@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
         FiboFinder fibo = new FiboFinder();
 
-        int n = 10;
+        int n = 20;
 
-        System.out.println("The " + n + "th term of the Fibonacci sequence is: " +
+        System.out.println("THIS PROGRAM HAS BEEN MODIFIED SLIGHTLY\n" + "The " + n + "th term of the Fibonacci sequence is: " +
                 fibo.FindTerm(n) + ".");
     }
 }

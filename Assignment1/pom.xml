@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>cen4802.YourMainClassName</mainClass>
+                            <mainClass>cen4802.Assignment1.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -11,7 +11,7 @@ public class Main {
 
         int n = 34;
 
-        System.out.println("THIS PROGRAM HAS BEEN MODIFIED SLIGHTLY\n" + "The " + n + "th term of the Fibonacci sequence is: " +
+        System.out.println("THIS PROGRAM HAS, ONCE AGAIN, BEEN MODIFIED SLIGHTLY\n" + "The " + n + "th term of the Fibonacci sequence is: " +
                 fibo.FindTerm(n) + ".\nIs this number a prime number?: " + pf.IsPrime(fibo.FindTerm(n)));
     }
 }

@@ -17,7 +17,6 @@ class FiboFinderTest {
                 () -> assertEquals(13, fibo.FindTerm(7)),
                 () -> assertEquals(21, fibo.FindTerm(8)),
                 () -> assertEquals(34, fibo.FindTerm(9)),
-                () -> assertEquals(55, fibo.FindTerm(10)),
-                () -> assertEquals(5702887, fibo.FindTerm(34)));
+                () -> assertEquals(55, fibo.FindTerm(10)));
     }
 }

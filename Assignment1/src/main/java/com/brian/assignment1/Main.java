@@ -4,16 +4,37 @@ package com.brian.assignment1; /**
  * and then runs the com.brian.assignment1.FiboFinder's FindTerm method to returns the integer that corresponds
  * with the nth term of the Fibonacci Sequence.
  */
-import java.util.Scanner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import java.util.Scanner;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+@SpringBootApplication
 public class Main {
     private static final Logger loggy = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
+        Logger rootLog = Logger.getLogger("");
+        try {
+            FileHandler fh = new FileHandler("logs.log", false);
+            loggy.info("Log file created/accessed");
+            fh.setFormatter(new SimpleFormatter());
+            loggy.info("Log format set");
+
+            rootLog.addHandler(fh);
+            rootLog.setLevel(Level.ALL);
+            loggy.info("Log level set to " + rootLog.getLevel());
+        }
+        catch (Exception e) {
+            loggy.log(Level.SEVERE, "Cannot open log file!", e);
+        }
+        loggy.info("Application starting...");
+
+        SpringApplication.run(Main.class, args);
+        /*
         loggy.info("Creating root log...");
         Logger rootLog = Logger.getLogger("");
         loggy.info("Root logger created");
@@ -58,5 +79,6 @@ public class Main {
                 loggy.info("Please try again!");
             }
         }
+         */
     }
 }

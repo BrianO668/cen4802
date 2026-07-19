@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>com.brian.assignment1.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

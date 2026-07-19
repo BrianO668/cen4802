@@ -1,3 +1,5 @@
+package com.brian.assignment1;
+
 import java.util.logging.Logger;
 
 /**

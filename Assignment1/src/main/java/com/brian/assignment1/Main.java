@@ -1,7 +1,7 @@
-/**
- * The Main method that is used to find the Fibonacci Sequence term.
- * This method instantiates a FiboFinder class, hard assigns an int to n,
- * and then runs the FiboFinder's FindTerm method to returns the integer that corresponds
+package com.brian.assignment1; /**
+ * The com.brian.assignment1.Main method that is used to find the Fibonacci Sequence term.
+ * This method instantiates a com.brian.assignment1.FiboFinder class, hard assigns an int to n,
+ * and then runs the com.brian.assignment1.FiboFinder's FindTerm method to returns the integer that corresponds
  * with the nth term of the Fibonacci Sequence.
  */
 import java.util.Scanner;
@@ -36,9 +36,9 @@ public class Main {
 
         loggy.info("Application starting...");
 
-        loggy.info("FiboFinder instantiating...");
+        loggy.info("com.brian.assignment1.FiboFinder instantiating...");
         FiboFinder fibo = new FiboFinder();
-        loggy.info("PrimeFinder instantiating...");
+        loggy.info("com.brian.assignment1.PrimeFinder instantiating...");
         PrimeFinder pf = new PrimeFinder();
 
         while (true) {

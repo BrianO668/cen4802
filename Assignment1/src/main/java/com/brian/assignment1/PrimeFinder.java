@@ -1,3 +1,5 @@
+package com.brian.assignment1;
+
 import java.util.logging.Logger;
 
 /**Class that contains a method to determine if a number is prime or not

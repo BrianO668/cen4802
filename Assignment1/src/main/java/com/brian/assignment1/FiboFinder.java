@@ -30,7 +30,6 @@ public class FiboFinder {
             return 1;
         }
         else {
-            loggy.info("Entering recursion...");
             return FindTerm(n - 1) + FindTerm(n - 2);
         }
     }

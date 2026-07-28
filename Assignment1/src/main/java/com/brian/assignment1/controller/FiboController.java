@@ -23,5 +23,6 @@ public class FiboController {
 
         loggy.info("Attempting to acquire response");
         return new FiboResponse(n, result, isPrime);
+
     }
 }
